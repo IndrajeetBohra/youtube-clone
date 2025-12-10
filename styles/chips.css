@@ -1,0 +1,69 @@
+.all-chip-container {
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 16px;
+  padding-right: 16px;
+  align-items: center;
+  position: fixed;
+  top: 56px;
+  left: 80px;
+  right: 0px;
+  z-index: 100;
+  background-color: white;
+}
+.tags-below-header {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.indivisual-chip-container {
+  display: block;
+  margin: 12px 12px 12px 0px;
+}
+.chip-button {
+  display: inline-flex;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+  outline-width: 0;
+  box-sizing: border-box;
+  background: none;
+  text-decoration: none;
+  padding: 0;
+}
+.selected-text {
+  background-color: #0f0f0f;
+  color: #fff;
+  padding: 0 12px;
+  position: relative;
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+  display: inline-flex;
+  height: 32px;
+  min-width: 12px;
+  white-space: nowrap;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}
+.chip-text {
+  background: rgba(0, 0, 0, 0.05);
+  color: #000000;
+  padding: 0 12px;
+  position: relative;
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+  display: inline-flex;
+  height: 32px;
+  min-width: 12px;
+  white-space: nowrap;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+}

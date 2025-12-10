@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" /> -->
+    <title>Youtube Clone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/video.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/sidebar.css" />
+    <link rel="stylesheet" href="styles/chips.css" />
+    <link rel="icon" type="" href="favicon/favicon.ico" />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <img class="hamburger-menu" src="icons/header-hamburger-menu.svg" />
+        <img class="youtube-logo" src="icons/youtube-logo.svg" />
+      </div>
+      <div class="middle-section">
+        <div class="search-box-component-host">
+          <input
+            class="search-bar"
+            type="text"
+            placeholder="Search"
+            name="search-query"
+          />
+          <button class="search-button">
+            <img class="search-icon" src="icons/header-search.svg" />
+            <div class="tooltip">Search</div>
+          </button>
+        </div>
+        <button class="voice-search-button">
+          <img
+            class="voice-search-icon"
+            src="icons/header-voice-serach-icon.svg"
+          />
+          <div class="tooltip">Search with your voice</div>
+        </button>
+      </div>
+      <div class="right-section">
+        <div class="plus-create">
+          <img class="plus-icon" src="icons/header-plus-icon.svg" />
+          <span class="create-text">Create</span>
+        </div>
+        <div class="notification-icon-container">
+          <button class="notification-button">
+            <img
+              class="notifications-icon"
+              src="icons/header-notification-icon.svg"
+            />
+            <div class="tooltip">Notifications</div>
+          </button>
+          <!-- <div class="notifications-count">3</div> -->
+        </div>
+
+        <button class="current-user-button">
+          <img
+            class="current-user-picture"
+            src="channel-pictures/my-channel.png"
+          />
+        </button>
+      </div>
+    </header>
+    <div class="all-chip-container">
+      <div class="tags-below-header">
+        <div class="indivisual-chip-container">
+          <button class="chip-button">
+            <div class="selected-text">All</div>
+          </button>
+        </div>
+        <div class="indivisual-chip-container">
+          <button class="chip-button">
+            <div class="chip-text">Music</div>
+          </button>
+        </div>
+        <div class="indivisual-chip-container">
+          <button class="chip-button">
+            <div class="chip-text">Software Engineering</div>
+          </button>
+        </div>
+        <div class="indivisual-chip-container">
+          <button class="chip-button">
+            <div class="chip-text">Gaming</div>
+          </button>
+        </div>
+        <div class="indivisual-chip-container">
+          <button class="chip-button">
+            <div class="chip-text">Computer Programming</div>
+          </button>
+        </div>
+        <div class="indivisual-chip-container">
+          <button class="chip-button">
+            <div class="chip-text">Mixes</div>
+          </button>
+        </div>
+        <div class="indivisual-chip-container">
+          <button class="chip-button">
+            <div class="chip-text">Podcasts</div>
+          </button>
+        </div>
+        <div class="indivisual-chip-container">
+          <button class="chip-button">
+            <div class="chip-text">Bodybuilding</div>
+          </button>
+        </div>
+        <div class="indivisual-chip-container">
+          <button class="chip-button">
+            <div class="chip-text">Comedy</div>
+          </button>
+        </div>
+        <div class="indivisual-chip-container">
+          <button class="chip-button">
+            <div class="chip-text">Physics</div>
+          </button>
+        </div>
+        <div class="indivisual-chip-container">
+          <button class="chip-button">
+            <div class="chip-text">History</div>
+          </button>
+        </div>
+        <div class="indivisual-chip-container">
+          <button class="chip-button">
+            <div class="chip-text">Animated films</div>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <nav class="sidebar">
+      <div class="sidebar-link">
+        <div class="image-title-container">
+          <img class="sidebar-icons" src="icons/sidebar-home.svg" />
+          <div class="sidebar-icon-title">Home</div>
+        </div>
+      </div>
+      <div class="sidebar-link">
+        <div class="image-title-container">
+          <img class="sidebar-icons" src="icons/sidebar-shorts.svg" />
+          <div class="sidebar-icon-title">Shorts</div>
+        </div>
+      </div>
+      <div class="sidebar-link">
+        <div class="image-title-container">
+          <img class="sidebar-icons" src="icons/sidebar-subscriptions.svg" />
+          <div class="sidebar-icon-title">Subscriptions</div>
+        </div>
+      </div>
+      <div class="sidebar-link">
+        <div class="image-title-container">
+          <img class="sidebar-icons" src="icons/sidebar-youtube-music.svg" />
+          <div class="sidebar-icon-title">YouTube Music</div>
+        </div>
+      </div>
+      <div class="sidebar-link">
+        <div class="image-title-container">
+          <img class="sidebar-icons" src="icons/sidebar-you.svg" />
+          <div class="sidebar-icon-title">You</div>
+        </div>
+      </div>
+      <div class="sidebar-link">
+        <div class="image-title-container">
+          <img class="sidebar-icons" src="icons/sidebar-downloads.svg" />
+          <div class="sidebar-icon-title">Downloads</div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section class="video-grid">
+        <div class="video-preview">
+          <a
+            href="https://www.youtube.com/watch?v=vrk40pZ8Kc8"
+            target="_blank"
+            class="video-channel-link"
+          >
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-2.jpg" />
+              <div class="video-time">10:10</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a
+                href="https://www.youtube.com/@MichaelReeves"
+                target="_blank"
+                class="video-channel-link"
+              >
+                <img
+                  class="profile-picture"
+                  src="channel-pictures/channel-2.jpg"
+                />
+              </a>
+            </div>
+            <div class="video-info">
+              <a
+                href="https://www.youtube.com/watch?v=vrk40pZ8Kc8"
+                target="_blank"
+                class="video-channel-link"
+              >
+                <p class="video-title">a boring video</p>
+              </a>
+              <a
+                href="https://www.youtube.com/@MichaelReeves"
+                target="_blank"
+                class="video-channel-link"
+              >
+                <div class="author-line">
+                  <p class="video-author">Michael Reeves</p>
+                  <img class="verified-icon" src="icons/verified-check.svg" />
+                </div>
+              </a>
+              <p class="video-stats">8.3M views &#183; 2 years ago</p>
+            </div>
+            <div class="feedback-container">
+              <img class="three-dots" src="icons/three-dots.svg" />
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <a
+            href="https://www.youtube.com/watch?v=G3e-cpL7ofc"
+            target="_blank"
+            class="video-channel-link"
+          >
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-1.avif" />
+              <div class="video-time">6:31:23</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a
+                href="https://www.youtube.com/@SuperSimpleDev"
+                target="_blank"
+                class="video-channel-link"
+              >
+                <img
+                  class="profile-picture"
+                  src="channel-pictures/channel-1.jpg"
+                />
+              </a>
+            </div>
+            <div class="video-info">
+              <a
+                href="https://www.youtube.com/watch?v=G3e-cpL7ofc"
+                target="_blank"
+                class="video-channel-link"
+              >
+                <p class="video-title">
+                  HTML & CSS Full Course - Beginner to Pro
+                </p>
+              </a>
+              <a
+                href="https://www.youtube.com/@SuperSimpleDev"
+                target="_blank"
+                class="video-channel-link"
+              >
+                <div class="author-line">
+                  <p class="video-author">SuperSimpleDev</p>
+                  <img class="verified-icon" src="icons/verified-check.svg" />
+                </div>
+              </a>
+              <p class="video-stats">15M views &#183; 3 years ago</p>
+            </div>
+            <div class="feedback-container">
+              <img class="three-dots" src="icons/three-dots.svg" />
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <a
+            href="https://www.youtube.com/watch?v=Nl7aCUsWykg"
+            target="_blank"
+            class="video-channel-link"
+          >
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-3.webp" />
+              <div class="video-time">3:37</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a
+                href="https://www.youtube.com/@Fireship"
+                target="_blank"
+                class="video-channel-link"
+              >
+                <img
+                  class="profile-picture"
+                  src="channel-pictures/channel-3.jpg"
+                />
+              </a>
+            </div>
+            <div class="video-info">
+              <a
+                href="https://www.youtube.com/watch?v=Nl7aCUsWykg"
+                target="_blank"
+                class="video-channel-link"
+              >
+                <p class="video-title">
+                  Big Tech in panic mode... Did DeepSeek R1 just pop the AI
+                  bubble?
+                </p>
+              </a>
+              <a
+                href="https://www.youtube.com/@Fireship"
+                target="_blank"
+                class="video-channel-link"
+              >
+                <div class="author-line">
+                  <p class="video-author">Fireship</p>
+                  <img class="verified-icon" src="icons/verified-check.svg" />
+                </div>
+              </a>
+              <p class="video-stats">3.8M views &#183; 6 months ago</p>
+            </div>
+            <div class="feedback-container">
+              <img class="three-dots" src="icons/three-dots.svg" />
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <a
+            href="https://www.youtube.com/watch?v=sW9npZVpiMI"
+            target="_blank"
+            class="video-channel-link"
+          >
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-4.jpg" />
+              <div class="video-time">5:03</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a
+                href="https://www.youtube.com/@jomakaze"
+                target="_blank"
+                class="video-channel-link"
+              >
+                <img
+                  class="profile-picture"
+                  src="channel-pictures/channel-4.jpg"
+                />
+              </a>
+            </div>
+            <div class="video-info">
+              <a
+                href="https://www.youtube.com/watch?v=sW9npZVpiMI"
+                target="_blank"
+                class="video-channel-link"
+              >
+                <p class="video-title">why you NEED math for programming</p>
+              </a>
+              <a
+                href="https://www.youtube.com/@jomakaze"
+                target="_blank"
+                class="video-channel-link"
+              >
+                <div class="author-line">
+                  <p class="video-author">Joma Tech</p>
+                  <img class="verified-icon" src="icons/verified-check.svg" />
+                </div>
+              </a>
+              <p class="video-stats">9.2M views &#183; 4 years ago</p>
+            </div>
+            <div class="feedback-container">
+              <img class="three-dots" src="icons/three-dots.svg" />
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <a
+            href="https://www.youtube.com/watch?v=xuCn8ux2gbs"
+            target="_blank"
+            class="video-channel-link"
+          >
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-5.jpg" />
+              <div class="video-time">19:26</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a
+                href="https://www.youtube.com/@billwurtz"
+                target="_blank"
+                class="video-channel-link"
+              >
+                <img
+                  class="profile-picture"
+                  src="channel-pictures/channel-5.jpg"
+                />
+              </a>
+            </div>
+            <div class="video-info">
+              <a
+                href="https://www.youtube.com/watch?v=xuCn8ux2gbs"
+                target="_blank"
+                class="video-channel-link"
+              >
+                <p class="video-title">history of the entire world, i guess</p>
+              </a>
+              <a
+                href="https://www.youtube.com/@billwurtz"
+                target="_blank"
+                class="video-channel-link"
+              >
+                <div class="author-line">
+                  <p class="video-author">bill wurtz</p>
+                  <img class="verified-icon" src="icons/verified-music.svg" />
+                </div>
+              </a>
+              <p class="video-stats">177M views &#183; 8 years ago</p>
+            </div>
+            <div class="feedback-container">
+              <img class="three-dots" src="icons/three-dots.svg" />
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <a
+            href="https://www.youtube.com/watch?v=5u7euN1HTuU"
+            target="_blank"
+            class="video-channel-link"
+          >
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-6.jpg" />
+              <div class="video-time">1:38:11</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a
+                href="https://www.youtube.com/@LEMMiNO"
+                target="_blank"
+                class="video-channel-link"
+              >
+                <img
+                  class="profile-picture"
+                  src="channel-pictures/channel-6.jpg"
+                />
+              </a>
+            </div>
+            <div class="video-info">
+              <a
+                href="https://www.youtube.com/watch?v=5u7euN1HTuU"
+                target="_blank"
+                class="video-channel-link"
+              >
+                <p class="video-title">
+                  The Kennedy Assassination: Inside the Book Depository
+                </p>
+              </a>
+              <a
+                href="https://www.youtube.com/@LEMMiNO"
+                target="_blank"
+                class="video-channel-link"
+              >
+                <div class="author-line">
+                  <p class="video-author">LEMMiNO</p>
+                  <img class="verified-icon" src="icons/verified-check.svg" />
+                </div>
+              </a>
+              <p class="video-stats">14M views &#183; 2 years ago</p>
+            </div>
+            <div class="feedback-container">
+              <img class="three-dots" src="icons/three-dots.svg" />
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <a
+            href="https://www.youtube.com/watch?v=s3a4OQR-10M"
+            target="_blank"
+            class="video-channel-link"
+          >
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-7.jpg" />
+              <div class="video-time">&#9834; 4:28</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a
+                href="https://www.youtube.com/@TameImpala"
+                target="_blank"
+                class="video-channel-link"
+              >
+                <img
+                  class="profile-picture"
+                  src="channel-pictures/channel-7.jpg"
+                />
+              </a>
+            </div>
+            <div class="video-info">
+              <a
+                href="https://www.youtube.com/watch?v=s3a4OQR-10M"
+                target="_blank"
+                class="video-channel-link"
+              >
+                <p class="video-title">Tame Impala - Loser (Official Video)</p>
+              </a>
+              <a
+                href="https://www.youtube.com/@TameImpala"
+                target="_blank"
+                class="video-channel-link"
+              >
+                <div class="author-line">
+                  <p class="video-author">Tame Impala</p>
+                  <img class="verified-icon" src="icons/verified-music.svg" />
+                </div>
+              </a>
+              <p class="video-stats">11M views &#183; 3 months ago</p>
+            </div>
+            <div class="feedback-container">
+              <img class="three-dots" src="icons/three-dots.svg" />
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <a
+            href="https://www.youtube.com/watch?v=T1tcUfUhR5U"
+            target="_blank"
+            class="video-channel-link"
+          >
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-8.jpg" />
+              <div class="video-time">&#9834; 59:56</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a
+                href="https://www.youtube.com/@boilerroom"
+                target="_blank"
+                class="video-channel-link"
+              >
+                <img
+                  class="profile-picture"
+                  src="channel-pictures/channel-8.jpg"
+                />
+              </a>
+            </div>
+            <div class="video-info">
+              <a
+                href="https://www.youtube.com/watch?v=T1tcUfUhR5U"
+                target="_blank"
+                class="video-channel-link"
+              >
+                <p class="video-title">
+                  ¥ØU$UK€ ¥UK1MAT$U | Boiler Room: Tokyo
+                </p>
+              </a>
+              <a
+                href="https://www.youtube.com/@boilerroom"
+                target="_blank"
+                class="video-channel-link"
+              >
+                <div class="author-line">
+                  <p class="video-author">Boiler Room</p>
+                  <img class="verified-icon" src="icons/verified-check.svg" />
+                </div>
+              </a>
+              <p class="video-stats">15M views &#183; 10 months ago</p>
+            </div>
+            <div class="feedback-container">
+              <img class="three-dots" src="icons/three-dots.svg" />
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <a
+            href="https://www.youtube.com/watch?v=jNQXAC9IVRw"
+            target="_blank"
+            class="video-channel-link"
+          >
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-9.avif" />
+              <div class="video-time">0:19</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a
+                href="https://www.youtube.com/@jawed"
+                target="_blank"
+                class="video-channel-link"
+              >
+                <img
+                  class="profile-picture"
+                  src="channel-pictures/channel-9.jpg"
+                />
+              </a>
+            </div>
+            <div class="video-info">
+              <a
+                href="https://www.youtube.com/watch?v=jNQXAC9IVRw"
+                target="_blank"
+                class="video-channel-link"
+              >
+                <p class="video-title">Me at the zoo</p>
+              </a>
+              <a
+                href="https://www.youtube.com/@jawed"
+                target="_blank"
+                class="video-channel-link"
+              >
+                <div class="author-line">
+                  <p class="video-author">jawed</p>
+                  <img class="verified-icon" src="icons/verified-check.svg" />
+                </div>
+              </a>
+              <p class="video-stats">377M views &#183; 20 years ago</p>
+            </div>
+            <div class="feedback-container">
+              <img class="three-dots" src="icons/three-dots.svg" />
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <a
+            href="https://www.youtube.com/watch?v=WReusTs0Vbo"
+            target="_blank"
+            class="video-channel-link"
+          >
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-10.jpg" />
+              <div class="video-time">1:28:19</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a
+                href="https://www.youtube.com/@InternetHistorian"
+                target="_blank"
+                class="video-channel-link"
+              >
+                <img
+                  class="profile-picture"
+                  src="channel-pictures/channel-10.jpg"
+                />
+              </a>
+            </div>
+            <div class="video-info">
+              <a
+                href="https://www.youtube.com/watch?v=WReusTs0Vbo"
+                target="_blank"
+                class="video-channel-link"
+              >
+                <p class="video-title">Ever Given, Ever Taken Away</p>
+              </a>
+              <a
+                href="https://www.youtube.com/@InternetHistorian"
+                target="_blank"
+                class="video-channel-link"
+              >
+                <div class="author-line">
+                  <p class="video-author">Internet Historian</p>
+                  <img class="verified-icon" src="icons/verified-check.svg" />
+                </div>
+              </a>
+              <p class="video-stats">5.5M views &#183; 4 months ago</p>
+            </div>
+            <div class="feedback-container">
+              <img class="three-dots" src="icons/three-dots.svg" />
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <a
+            href="https://www.youtube.com/watch?v=wcDFgir_jgY"
+            target="_blank"
+            class="video-channel-link"
+          >
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-11.jpg" />
+              <div class="video-time">21:19</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a
+                href="https://www.youtube.com/@OutdoorBoys"
+                target="_blank"
+                class="video-channel-link"
+              >
+                <img
+                  class="profile-picture"
+                  src="channel-pictures/channel-11.jpg"
+                />
+              </a>
+            </div>
+            <div class="video-info">
+              <a
+                href="https://www.youtube.com/watch?v=wcDFgir_jgY"
+                target="_blank"
+                class="video-channel-link"
+              >
+                <p class="video-title">
+                  Dugout Shelter Under 10ft (3m) of Snow - Solo Camping in
+                  Survival Shelter During Snow Storm
+                </p>
+              </a>
+              <a
+                href="https://www.youtube.com/@OutdoorBoys"
+                target="_blank"
+                class="video-channel-link"
+              >
+                <div class="author-line">
+                  <p class="video-author">Outdoor Boys</p>
+                  <img class="verified-icon" src="icons/verified-check.svg" />
+                </div>
+              </a>
+              <p class="video-stats">84M views &#183; 2 years ago</p>
+            </div>
+            <div class="feedback-container">
+              <img class="three-dots" src="icons/three-dots.svg" />
+            </div>
+          </div>
+        </div>
+
+        <div class="video-preview">
+          <a
+            href="https://www.youtube.com/watch?v=JANApS0P4z8"
+            target="_blank"
+            class="video-channel-link"
+          >
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-12.jpg" />
+              <div class="video-time">4:38</div>
+            </div>
+          </a>
+          <div class="video-info-grid">
+            <div class="channel-picture">
+              <a
+                href="https://www.youtube.com/@CasuallyExplained"
+                target="_blank"
+                class="video-channel-link"
+              >
+                <img
+                  class="profile-picture"
+                  src="channel-pictures/channel-12.jpg"
+                />
+              </a>
+            </div>
+            <div class="video-info">
+              <a
+                href="https://www.youtube.com/watch?v=JANApS0P4z8"
+                target="_blank"
+                class="video-channel-link"
+              >
+                <p class="video-title">Casually Explained: Levels of Wealth</p>
+              </a>
+              <a
+                href="https://www.youtube.com/@CasuallyExplained"
+                target="_blank"
+                class="video-channel-link"
+              >
+                <div class="author-line">
+                  <p class="video-author">Casually Explained</p>
+                  <img class="verified-icon" src="icons/verified-check.svg" />
+                </div>
+              </a>
+              <p class="video-stats">13M views &#183; 8 years ago</p>
+            </div>
+            <div class="feedback-container">
+              <img class="three-dots" src="icons/three-dots.svg" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

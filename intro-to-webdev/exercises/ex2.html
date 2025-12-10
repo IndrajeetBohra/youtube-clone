@@ -1,0 +1,88 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>4h. Pagination</p>
+    <button class="page-button">Back</button>
+    <a href="">1</a>
+    <a href="">2</a>
+    <a href="">3</a>
+    <a href="">4</a>
+    <a href="">5</a>
+    <button class="page-button">Next</button>
+    <p>4i. Stretch</p>
+    <button class="button-stretch">Stretch</button>
+    <p>4j. 3d click</p>
+    <button class="button-3d">Shadow</button>
+    <p>4k. Margin and padding together</p>
+    <button class="stretch-button">One</button>
+    <button class="stretch-button">Two</button>
+    <button class="stretch-button">Three</button>
+  </body>
+</html>
+<style>
+  .stretch-button {
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 11px;
+    padding-right: 11px;
+    margin-left: 8px;
+    margin-right: 8px;
+    transition: padding 0.15s, margin 0.15s;
+  }
+  .stretch-button:hover {
+    padding-right: 19px;
+    padding-left: 19px;
+    margin-left: 0px;
+    margin-right: 0px;
+    cursor: pointer;
+  }
+  .page-button {
+    padding: 5px;
+  }
+  a {
+    padding: 5px;
+  }
+  .button-stretch {
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    transition: padding-top 0.5s, padding-bottom 0.5s, padding-left 0.5s,
+      padding-right 0.5s;
+  }
+  .button-stretch:hover {
+    cursor: pointer;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+  .button-3d {
+    background-color: green;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+  }
+  .button-3d:active {
+    margin-top: 3px;
+    margin-left: 3px;
+    box-shadow: none;
+  }
+</style>

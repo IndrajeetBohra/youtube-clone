@@ -1,0 +1,37 @@
+.profile-pic {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  object-fit: cover;
+  object-position: center;
+}
+.text {
+  font-size: 18px;
+  vertical-align: middle;
+  width: 300px;
+  border: none;
+}
+.button {
+  background-color: rgba(0, 0, 255, 0.6);
+  color: white;
+  border: none;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.shadow {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  border-radius: 6px;
+  display: inline-block;
+  width: 450px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+}
