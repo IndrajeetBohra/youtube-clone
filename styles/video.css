@@ -34,10 +34,6 @@
   font-size: 12px;
   line-height: 18px;
   font-weight: 500;
-  /* padding-top: 1px;
-  padding-right: 4px;
-  padding-bottom: 1px;
-  padding-left: 4px; */
   padding: 1px 4px;
   margin-bottom: 20px;
   margin-top: 8px;
@@ -67,10 +63,6 @@
 .video-info {
   display: flex;
   flex-direction: column;
-}
-.video-title-link {
-  text-decoration: none;
-  color: black;
 }
 .video-title {
   margin-top: 0px;

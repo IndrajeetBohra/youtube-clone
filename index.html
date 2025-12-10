@@ -22,7 +22,13 @@
     <header class="header">
       <div class="left-section">
         <img class="hamburger-menu" src="icons/header-hamburger-menu.svg" />
-        <img class="youtube-logo" src="icons/youtube-logo.svg" />
+        <a
+          href="https://www.youtube.com"
+          target="_blank"
+          class="youtube-logo-anchor"
+        >
+          <img class="youtube-logo" src="icons/youtube-logo.svg" />
+        </a>
       </div>
       <div class="middle-section">
         <div class="search-box-component-host">
@@ -60,16 +66,18 @@
           </button>
           <!-- <div class="notifications-count">3</div> -->
         </div>
-
-        <button class="current-user-button">
-          <img
-            class="current-user-picture"
-            src="channel-pictures/my-channel.png"
-          />
-        </button>
+        <a href="https://myaccount.google.com/" target="_blank">
+          <button class="current-user-button">
+            <img
+              class="current-user-picture"
+              src="channel-pictures/my-channel.png"
+            />
+          </button>
+        </a>
       </div>
     </header>
-    <div class="all-chip-container">
+
+    <div class="chips-wrapper">
       <div class="tags-below-header">
         <div class="indivisual-chip-container">
           <button class="chip-button">
